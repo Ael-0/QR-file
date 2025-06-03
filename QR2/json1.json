@@ -1,0 +1,21 @@
+{
+    "ConnectionStrings": {
+        "DefaultConnection": "Data Source=files.db"
+    },
+    "Logging": {
+        "LogLevel": {
+            "Default": "Information",
+            "Microsoft.AspNetCore": "Warning"
+        }
+    },
+    "AllowedHosts": "*",
+    "Kestrel": {
+        "Endpoints": {
+            "Http": {
+                "Url": "http://localhost:5000"
+            }
+        }
+    }
+}{
+
+}
