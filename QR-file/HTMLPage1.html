@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Файлообмінник</title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>QR Файлообмінник</h1>
+            <p>Корпоративна система обміну файлами через QR-коди</p>
+        </div>
+
+        <div class="upload-section">
+            <h2>Завантажити файл</h2>
+            <form class="upload-form" id="uploadForm">
+                <div class="file-input-wrapper">
+                    <input type="file" id="fileInput" class="file-input" required>
+                    <label for="fileInput" class="file-input-label" id="fileLabel">
+                    </label>
+                </div>
+                <button type="submit" class="upload-btn" id="uploadBtn">
+                </button>
+            </form>
+        </div>
+
+        <div class="files-section">
+            <h2>Завантажені файли</h2>
+            <div id="filesContainer">
+                <div class="loading">⏳ Завантаження файлів...</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/manager.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

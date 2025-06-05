@@ -53,7 +53,7 @@ app.MapControllers();
 app.MapGet("/", () => Results.Redirect("/index.html"));
 
 // Запускаємо додаток
-Console.WriteLine("🚀 QR Файлообмінник запущено!");
-Console.WriteLine($"📂 Відкрийте браузер: http://localhost:{builder.Configuration["urls"]?.Split(';')[0]?.Split(':')[2] ?? "5000"}");
+Console.WriteLine(" QR Файлообмінник запущено!");
+Console.WriteLine($"Відкрийте браузер: http://localhost:{builder.Configuration["urls"]?.Split(';')[0]?.Split(':')[2] ?? "5000"}");
 
 app.Run();
